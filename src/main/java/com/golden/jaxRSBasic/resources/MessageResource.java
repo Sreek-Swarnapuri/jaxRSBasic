@@ -19,8 +19,8 @@ public class MessageResource {
 	
 	@GET
 	@Produces(MediaType.APPLICATION_JSON)
-	public List<Message> getMessages() {
-		return service.getMessages();
+	public List<Message> getAllMessages() {
+		return service.getAllMessages();
 	}
 
 }
