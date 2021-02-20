@@ -24,6 +24,13 @@ public class MessageResource {
 		return service.getAllMessages();
 	}
 	
+	@GET
+	@Path("/{id}")
+	@Produces(MediaType.APPLICATION_JSON)
+	public  Message getMessage(@PathParam("id") Long id) {
+		return service.getMessage(id);
+	}
+	
 
 	@DELETE
 	@Path("/remove/{id}")
